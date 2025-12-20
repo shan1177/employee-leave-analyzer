@@ -3,6 +3,21 @@
 A full-stack web application that analyzes employee attendance, leave usage, and productivity based on an uploaded Excel attendance sheet.
 
 
+## Deplyment
+
+This project is deployed on https://employee-leave-analyzer.vercel.app/dashboard
+
+Instructions: 
+
+First upload sample employee excel in
+/public/sample-attendance.xlsx
+
+to the upload section in
+https://employee-leave-analyzer.vercel.app/dashboard
+
+to see complete employee analysis
+
+
 ## Problem Statement
 
 Organizations often track employee attendance using Excel sheets, but manually calculating worked hours, leave usage, and productivity is time-consuming and error-prone.
@@ -52,8 +67,10 @@ Productivity (%) = (Actual Worked Hours / Expected Working Hours) × 100
 
 ## Sample Excel Format
 
-A sample Excel file is included in:
+A sample Excel file is included in the repository:
 /public/sample-attendance.xlsx
+
+Kindly upload to https://employee-leave-analyzer.vercel.app/upload 
 
 
  Employee Name    | Date	      | In-Time	| Out-Time
