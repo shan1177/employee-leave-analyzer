@@ -1,36 +1,70 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+### Leave & Productivity Analyzer
 
-## Getting Started
+A full-stack web application that analyzes employee attendance, leave usage, and productivity based on an uploaded Excel attendance sheet.
 
-First, run the development server:
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## Problem Statement
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Organizations often track employee attendance using Excel sheets, but manually calculating worked hours, leave usage, and productivity is time-consuming and error-prone.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+This project automates the process by:
+- Uploading attendance Excel files
+- Calculating worked hours and leaves
+- Computing productivity percentages
+- Displaying a clean monthly dashboard
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
 
-## Learn More
+## Business Rules
 
-To learn more about Next.js, take a look at the following resources:
+### Working Hours
+- **Monday–Friday:** 8.5 hours (10:00 AM – 6:30 PM)
+- **Saturday:** 4 hours (10:00 AM – 2:00 PM)
+- **Sunday:** Off
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+### Leave Policy
+- Each employee is allowed **2 leaves per month**
+- Missing attendance on working days is counted as a leave
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+### Productivity Formula
 
-## Deploy on Vercel
+Productivity (%) = (Actual Worked Hours / Expected Working Hours) × 100
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## Features
+
+- Upload Excel (.xlsx) attendance files
+- Automatic leave detection
+- Monthly productivity calculation
+- Employee-wise dashboard
+- Month & year selection
+- Daily attendance breakdown
+
+
+## Tech Stack
+
+- Frontend: Next.js (App Router), TypeScript
+- Styling: Tailwind CSS
+- Backend: Next.js API Routes
+- Database: MongoDB Atlas
+- ORM: Prisma
+- Excel Parsing: ExcelJS
+
+
+## Sample Excel Format
+
+A sample Excel file is included in:
+/public/sample-attendance.xlsx
+
+
+ Employee Name    | Date	      | In-Time	| Out-Time
+|-----------------|-------------|---------|---------
+ John Doe	        | 01/01/2024	| 10:00	  | 18:30
+ Enrique Preston	| 02/01/2024	| 10:15	  | 18:45
+ Marina Armstrong | 03/01/2024	|	
+ Ember Weber	    | 06/01/2024	| 10:00	  | 14:00
+ Cassius Sosa	    | 07/01/2024  |
+
+
+> Missing in-time or out-time is treated as a leave.
+
+
