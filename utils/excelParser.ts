@@ -7,7 +7,9 @@ export interface AttendanceRow {
   outTime?: Date;
 }
 
-export async function parseExcel(buffer: Buffer): Promise<AttendanceRow[]> {
+export async function parseExcel(
+  buffer: ArrayBuffer
+): Promise<AttendanceRow[]> {
   const workbook = new ExcelJS.Workbook();
   await workbook.xlsx.load(buffer);
 

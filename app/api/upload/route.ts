@@ -17,8 +17,9 @@ export async function POST(req: Request) {
       );
     }
 
-    const buffer = Buffer.from(await file.arrayBuffer());
-    const rows = await parseExcel(buffer);
+    const arrayBuffer = await file.arrayBuffer();
+    const rows = await parseExcel(arrayBuffer);
+
 
     for (const row of rows) {
       let employee = await prisma.employee.findFirst({
