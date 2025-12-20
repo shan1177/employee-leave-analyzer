@@ -1,7 +1,6 @@
-# Leave & Productivity Analyzer
+### Leave & Productivity Analyzer
 
 A full-stack web application that analyzes employee attendance, leave usage, and productivity based on an uploaded Excel attendance sheet.
-
 
 
 ## Problem Statement
@@ -13,7 +12,6 @@ This project automates the process by:
 - Calculating worked hours and leaves
 - Computing productivity percentages
 - Displaying a clean monthly dashboard
-
 
 
 ## Business Rules
@@ -32,7 +30,6 @@ This project automates the process by:
 Productivity (%) = (Actual Worked Hours / Expected Working Hours) × 100
 
 
-
 ## Features
 
 - Upload Excel (.xlsx) attendance files
@@ -41,7 +38,6 @@ Productivity (%) = (Actual Worked Hours / Expected Working Hours) × 100
 - Employee-wise dashboard
 - Month & year selection
 - Daily attendance breakdown
-
 
 
 ## Tech Stack
@@ -54,47 +50,21 @@ Productivity (%) = (Actual Worked Hours / Expected Working Hours) × 100
 - Excel Parsing: ExcelJS
 
 
-
 ## Sample Excel Format
 
 A sample Excel file is included in:
 /public/sample-attendance.xlsx
 
 
-| Employee Name | Date       | In-Time | Out-Time |
-|--------------|------------|--------|---------|
-| John Doe     | 2024-01-01 | 10:00  | 18:30  |
-| John Doe     | 2024-01-02 |        |        |
+ Employee Name    | Date	      | In-Time	| Out-Time
+|-----------------|-------------|---------|---------
+ John Doe	        | 01/01/2024	| 10:00	  | 18:30
+ Enrique Preston	| 02/01/2024	| 10:15	  | 18:45
+ Marina Armstrong | 03/01/2024	|	
+ Ember Weber	    | 06/01/2024	| 10:00	  | 14:00
+ Cassius Sosa	    | 07/01/2024  |
+
 
 > Missing in-time or out-time is treated as a leave.
-
----
-
-## How to Run Locally
-
-### 1. Clone the repository
-```bash
-git clone <your-repo-url>
-cd leave-productivity-analyzer
-
-2. Install dependencies
-npm install
-
-3. Configure environment variables
-
-Create a .env file:
-
-DATABASE_URL="your_mongodb_connection_string"
-
-4. Sync database
-npx prisma db push
-
-5. Start the app
-npm run dev
-
-
-Open:
-
-http://localhost:3000/upload
 
 
