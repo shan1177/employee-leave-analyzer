@@ -12,7 +12,7 @@ This project is deployed on https://employee-leave-analyzer.vercel.app/dashboard
 
 -upload sample employee excel https://github.com/shan1177/employee-leave-analyzer/blob/main/public/sample-attendance.xlsx
 
--to the upload section in https://employee-leave-analyzer.vercel.app/dashboard
+-to the upload section in https://employee-leave-analyzer.vercel.app/upload
 
 to see complete employee analysis
 
