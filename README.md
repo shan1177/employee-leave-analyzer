@@ -1,4 +1,4 @@
-### Leave & Productivity Analyzer
+# Leave & Productivity Analyzer
 
 A full-stack web application that analyzes employee attendance, leave usage, and productivity based on an uploaded Excel attendance sheet.
 
@@ -8,7 +8,7 @@ A full-stack web application that analyzes employee attendance, leave usage, and
 This project is deployed on https://employee-leave-analyzer.vercel.app/dashboard
 
 
-# Instructions for use: 
+## Instructions for use: 
 
 -upload sample employee excel https://github.com/shan1177/employee-leave-analyzer/blob/main/public/sample-attendance.xlsx
 
