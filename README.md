@@ -3,17 +3,16 @@
 A full-stack web application that analyzes employee attendance, leave usage, and productivity based on an uploaded Excel attendance sheet.
 
 
-## Deplyment
+## Deployment
 
 This project is deployed on https://employee-leave-analyzer.vercel.app/dashboard
 
-Instructions: 
 
-First upload sample employee excel in
-/public/sample-attendance.xlsx
+# Instructions for use: 
 
-to the upload section in
-https://employee-leave-analyzer.vercel.app/dashboard
+-upload sample employee excel https://github.com/shan1177/employee-leave-analyzer/blob/main/public/sample-attendance.xlsx
+
+-to the upload section in https://employee-leave-analyzer.vercel.app/dashboard
 
 to see complete employee analysis
 
