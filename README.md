@@ -5,7 +5,7 @@ A full-stack web application that analyzes employee attendance, leave usage, and
 
 ## Deployment
 
-This project is deployed on https://employee-leave-analyzer.vercel.app/dashboard
+This project is deployed on https://employee-leave-analyzer.vercel.app
 
 
 ## Instructions for use: 
@@ -14,7 +14,7 @@ This project is deployed on https://employee-leave-analyzer.vercel.app/dashboard
 
 -to the upload section in https://employee-leave-analyzer.vercel.app/upload
 
-to see complete employee analysis
+to see complete employee analysis in dashboard
 
 
 ## Problem Statement
