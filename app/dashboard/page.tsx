@@ -112,7 +112,7 @@ export default function DashboardPage() {
 
           <table className="w-full border">
             <thead>
-              <tr className="bg-gray-100">
+              <tr className="bg-blue-100">
                 <th className="border p-2">Date</th>
                 <th className="border p-2">In</th>
                 <th className="border p-2">Out</th>
