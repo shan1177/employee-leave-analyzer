@@ -1,4 +1,5 @@
 "use client";
+import Link from "next/link";
 
 import { useState } from "react";
 
@@ -45,6 +46,12 @@ export default function UploadPage() {
           {uploading ? "Uploading..." : "Upload"}
         </button>
       </form>
+      <Link href="/dashboard">
+        <button className="bg-blue-600 text-white px-4 py-2 rounded">
+          Go to Dashboard
+        </button>
+      </Link>
     </div>
+    
   );
 }

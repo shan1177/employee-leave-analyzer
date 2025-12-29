@@ -1,4 +1,6 @@
 "use client";
+import Link from "next/link";
+
 
 import { useEffect, useState } from "react";
 
@@ -37,6 +39,20 @@ export default function DashboardPage() {
 
   return (
     <div className="p-10 max-w-6xl mx-auto">
+      <div className="flex gap-4 mb-6">
+        <Link href="/upload">
+          <button className="bg-blue-600 text-white px-4 py-2 rounded">
+            Upload New Excel
+          </button>
+        </Link>
+
+        <Link href="/">
+          <button className="bg-blue-600 text-white px-4 py-2 rounded">
+            Home
+          </button>
+        </Link>
+      </div>
+
       <h1 className="text-2xl font-bold mb-6">
         Monthly Attendance Dashboard
       </h1>
@@ -44,7 +60,7 @@ export default function DashboardPage() {
       {/* Filters */}
       <div className="flex gap-4 mb-6">
         <select
-          className="border p-2"
+          className="border p-2 bg-white text-black rounded"
           value={employeeId}
           onChange={e => setEmployeeId(e.target.value)}
         >
@@ -57,7 +73,7 @@ export default function DashboardPage() {
         </select>
 
         <select
-          className="border p-2"
+          className="border p-2 bg-white text-black rounded"
           value={month}
           onChange={e => setMonth(Number(e.target.value))}
         >
@@ -67,7 +83,7 @@ export default function DashboardPage() {
         </select>
 
         <select
-          className="border p-2"
+          className="border p-2 bg-white text-black rounded"
           value={year}
           onChange={e => setYear(Number(e.target.value))}
         >
